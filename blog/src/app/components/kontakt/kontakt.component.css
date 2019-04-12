@@ -1,0 +1,11 @@
+.containerForm{
+    display:flex;
+    margin-top:5%;
+    justify-content: center;
+    
+}
+.form{
+    border-radius:20px; 
+    padding:2%;
+    width:50%;
+}

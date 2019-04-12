@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog-home.component.css']
 })
 export class BlogHomeComponent implements OnInit {
-  filterText: string;
+  public filterText: string;
 
   constructor() { }
 
