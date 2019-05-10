@@ -6,7 +6,7 @@ import {HttpClient} from '@angular/common/http';
   providedIn: 'root'
 })
 export class DataService {
-  private url = 'https://blogtai.herokuapp.com';
+  private url = 'http://localhost:8080';
 
   constructor (private http: HttpClient) {
   }
@@ -18,6 +18,9 @@ export class DataService {
 }
 getByText(data) {
 	return this.http.post(this.url + '/api/posts/', data);
+}
+createPost(data) {
+  return this.http.post(`${this.url}/posts`, { data: JSON.stringify(data) });
 }
 
   

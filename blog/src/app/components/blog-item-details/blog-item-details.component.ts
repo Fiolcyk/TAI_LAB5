@@ -23,8 +23,8 @@ export class BlogItemDetailsComponent implements OnInit {
       });
     if (id) {
       this.dataService.getById(id).subscribe(res => {
-        this.image = res['image'];
-        this.text = res['text'];
+        this.image = res['url'];
+        this.text = res['content'];
       });
     } else {
       this.id = 1;
